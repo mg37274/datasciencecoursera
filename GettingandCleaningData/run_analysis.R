@@ -1,10 +1,10 @@
 require(dplyr)
 require(tidyr)
 
-# Download the file
-zip_url <- 'http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
-download.file(zip_url, basename(zip_url))
-unzip(basename(zip_url))
+# Download the file - uncomment lines 5-7 if you don't already have the files.
+# zip_url <- 'http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+# download.file(zip_url, basename(zip_url))
+# unzip(basename(zip_url))
 
 # Read Test Data
 testX    <- read.table('./UCI HAR Dataset/test/X_test.txt')
